@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .calculator-container{
+            height: 440px;
+            width: 350px;
+            border: 1px solid;
+            background-color: #2f2f1e;
+            display: block;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+        .brand-name{
+            text-align: right;
+            margin-right: 40px;
+            font-weight: bold;
+            color: white;
+        }
+        .btn{
+            height: 50px;
+            width: 50px;
+            background-color: transparent;
+            color: white;
+            font-size: 23px;
+            border: 1px white;
+            border-radius: 20px;
+            margin: auto;
+            margin: 5px;
+        }
+        #display{
+            height: 50px;
+            width: 270px;
+            background-color:#99ff99;;
+            margin-left: 40px;
+            border: 1px double;
+            border-radius: 10px;
+            text-align: end;
+            font-size: 30px;
+        }
+        .button-container{
+            height: 200px;
+            width: 265px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        .btn:hover{
+            cursor: pointer;
+            box-shadow: 0px 2px 3px 5px gray;
+        }
+        #sp{
+            color: hotpink;
+        }
+        #sp1{
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="calculator-container">
+        <p class="brand-name">Casio</p>
+        <input type="text" id="display" >
+        <div class="button-container">
+            <button class="btn" id="sp">CE</button>
+            <button class="btn" id="sp">Del</button>
+            <button class="btn" id="sp">Auto</button>
+            <button class="btn" id="sp">ON</button>
+
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn" id="sp1">+</button>
+
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn" id="sp1">-</button>
+
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn" id="sp1">x</button>
+
+            <button class="btn" id="sp1">.</button>
+            <button class="btn">0</button>
+            <button class="btn" id="sp1">/</button>
+            <button class="btn" id="sp1">=</button>
+        </div>
+    </div>
+</body>
+</html>
